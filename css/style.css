@@ -1,0 +1,41 @@
+
+fieldset {
+	width: 300px;
+	margin: 25px 0 0 50px;
+	border: 1px solid #999999;
+	box-shadow: 1px 1px #cccccc;
+	padding: 10px;
+    background-color:rgb(236, 235, 235) ;
+}
+
+table {
+    width: 300px;
+	margin: 50px;
+    border-collapse: collapse;
+
+}
+th {
+
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+
+    margin: 15px;
+}
+
+p {
+
+    margin: 15px;
+    
+}
+

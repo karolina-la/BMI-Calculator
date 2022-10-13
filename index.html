@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    
+    <div class="container">
+    <h1>Body Mass Index Calculator</h1>
+    
+        <fieldset>
+        <label for="centimeters">Height (centimeters)</label>
+
+        <form oninput="result.value = range.value">
+            <input class="height-input-field" type="range" name="range" value="0" min="0" max="250">
+            <output id="result">0</output>/250
+        </form>
+
+            <label for="kilograms">Weight (kilograms)</label>
+
+        <form oninput="result2.value = range.value">
+            <input class="weight-input-field" type="range" name="range" value="0" min="0" max="250">
+            <output id="result2">0</output>/250
+        </form><br>
+
+        <button class="calculate" type="button" name="calculate" value="Calculate your BMI" id="bmi-output" onclick="Calculate()">Calculate your BMI</button><br>
+    </fieldset>
+        
+    <fieldset>
+            <div class="result">
+        <label for="bmi" id="bmi_label"><b>BMI Result</b></label>
+				<input type="text" name="bmi" id="bmi" readonly="readonly">
+    </div>
+
+        <div class="result-statement">
+            <p>Status</p>
+        </div>
+    </fieldset>
+    </div>
+    
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">BMI</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&#62;18.49</td>
+                <td>Underweight</td>
+            </tr>
+            <tr>
+                <td>18.5&#8211;24.9</td>
+                <td>Healthy</td>
+            </tr>
+            <tr>
+                <td>25&#8211;29.9</td>
+                <td>Overweight</td>
+            </tr>
+            <tr>
+                <td>&#62;30</td>
+                <td>Obesity</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
